@@ -1,3 +1,4 @@
 client/node_modules
 .idea
 server/venv
+server/firebase_secret.json
