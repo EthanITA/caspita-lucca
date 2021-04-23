@@ -16,10 +16,11 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = 'https://0.0.0.0:8000/ping';
+      const path = 'http://0.0.0.0:8000/ping';
       axios.get(path)
         .then((res) => {
           this.msg = res.data;
+          console.log(this.msg);
         })
         .catch((error) => {
           // eslint-disable-next-line
