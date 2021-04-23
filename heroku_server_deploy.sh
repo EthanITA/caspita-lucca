@@ -4,4 +4,4 @@ cd -
 
 # If it works, deploy!
 git commit -am 'Automatic deploy!'
-git push heroku master
+git push heroku master --force
