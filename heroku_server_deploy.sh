@@ -1,5 +1,6 @@
 #!/bin/bash
-npm run build
+cd client && npm run build
+cd -
 
 # If it works, deploy!
 git commit -am 'Automatic deploy!'
