@@ -7,7 +7,7 @@ from flask_cors import CORS
 load_dotenv()
 
 # Set up the app and point it to Vue
-app = Flask(__name__, static_folder='../client/dist/', static_url_path='/')
+app = Flask(__name__, static_folder='client/dist/', static_url_path='/')
 CORS(app, resources={r'/*': {'origins': '*'}})
 
 

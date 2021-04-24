@@ -1,0 +1,12 @@
+runtime: python38
+
+handlers:
+- url: /css
+  static_dir: client/dist/css
+
+- url: /img
+  static_dir: client/dist/img
+
+- url: /js
+  static_dir: client/dist/js
+
