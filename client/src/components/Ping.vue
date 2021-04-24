@@ -16,11 +16,10 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = 'http://0.0.0.0:8000/ping';
+      const path = 'https://caspita-lucca.herokuapp.com/ping';
       axios.get(path)
         .then((res) => {
           this.msg = res.data;
-          console.log(this.msg);
         })
         .catch((error) => {
           // eslint-disable-next-line
@@ -29,6 +28,7 @@ export default {
     },
   },
   created() {
+    console.log(this.msg);
     this.getMessage();
   },
 };
