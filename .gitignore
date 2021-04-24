@@ -2,3 +2,7 @@ client/node_modules
 .idea
 server/venv
 server/firebase_secret.json
+node_modules
+npm-debug.log
+.DS_Store
+*.env
