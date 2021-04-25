@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 
 export default {
   name: 'Ping',
@@ -14,23 +13,10 @@ export default {
       msg: '',
     };
   },
-  methods: {
-    getMessage: () => {
-      console.log(this.$api_gcloud);
-      const url = this.$api_gcloud + '/ping';
-      axios.get(url)
-        .then((res) => {
-          this.msg = res.data;
-        })
-        .catch((error) => {
-          // eslint-disable-next-line
-          console.error(error);
-        });
-    },
-  },
+  methods: {},
   created() {
     console.log(this.msg);
-    this.getMessage();
+    this.msg = this.$store.dispatch("ping")
   },
 };
 </script>

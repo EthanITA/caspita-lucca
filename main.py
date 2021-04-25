@@ -2,25 +2,25 @@ import os
 
 from dotenv import load_dotenv
 from flask import Flask
-
-# from flask_cors import CORS
+from flask_cors import CORS
 
 load_dotenv()
 """
 # Set up the app and point it to Vue
 app = Flask(__name__, static_folder='client/dist/', static_url_path='/')
-CORS(app, resources={r'/*': {'origins': '*'}})
 """
+app = Flask(__name__)
+CORS(app, resources={r'/*': {'origins': '*'}})
+
 """
 # Set up the index route
 @app.route('/')
 def index():
     return app.send_static_file('index.html')
 """
-app = Flask(__name__)
 
 
-@app.route("api/ping")
+@app.route("/api/ping")
 def ping():
     return "PING!"
 
