@@ -1,2 +1,2 @@
-cd app && npm run build && cd -
-git subtree push --prefix app/dist CaspitaSrl gh-pages
+npm run build
+git subtree push --prefix app/dist CaspitaSrl gh-pages --force

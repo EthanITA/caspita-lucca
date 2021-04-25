@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ msg }}</p>
+    <p>{{ this.$store.state.ping }}</p>
   </div>
 </template>
 
@@ -10,13 +10,13 @@ export default {
   name: 'Ping',
   data() {
     return {
-      msg: '',
+      msg: "",
     };
   },
   methods: {},
   created() {
     console.log(this.msg);
-    this.msg = this.$store.dispatch("ping")
+    this.$store.dispatch("ping")
   },
 };
 </script>
