@@ -15,9 +15,10 @@ export default {
     };
   },
   methods: {
-    getMessage() {
-      const path = 'https://caspita-lucca.herokuapp.com/ping';
-      axios.get(path)
+    getMessage: () => {
+      console.log(this.$api_gcloud);
+      const url = this.$api_gcloud + '/ping';
+      axios.get(url)
         .then((res) => {
           this.msg = res.data;
         })

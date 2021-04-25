@@ -13,3 +13,5 @@ new Vue({
   router,
   render: (h) => h(App),
 }).$mount('#app');
+Vue.prototype.$api_heroku = "https://caspita-lucca.herokuapp.com/api"
+Vue.prototype["$api_gcloud"] = "https://caspita-lucca.ew.r.appspot.com/"

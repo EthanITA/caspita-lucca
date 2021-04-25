@@ -2,7 +2,7 @@
   "name": "caspita-luccae",
   "version": "0.1.0",
   "private": true,
-    "dependencies": {
+  "dependencies": {
     "axios": "^0.21.1",
     "buefy": "^0.9.0",
     "core-js": "^3.6.5",
