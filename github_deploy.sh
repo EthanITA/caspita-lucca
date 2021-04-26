@@ -1,2 +1,1 @@
-npm run build
-git subtree push --prefix app/dist CaspitaSrl gh-pages --force
+npm run build && git push CaspitaSrl `git subtree split --prefix app/dist master`:gh-pages --force
