@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lucca/precache-manifest.f61abee24f941b497f0dba4fd4329986.js"
+  "/lucca/precache-manifest.2218f27a7a0e454c791f2d58f78cfd93.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "client"});
+workbox.core.setCacheNameDetails({prefix: "caspita-lucca"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
