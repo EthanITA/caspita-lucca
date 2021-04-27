@@ -1,10 +1,8 @@
 import os
 
-from dotenv import load_dotenv
 from flask import Flask
 from flask_cors import CORS
 
-load_dotenv()
 """
 # Set up the app and point it to Vue
 app = Flask(__name__, static_folder='client/dist/', static_url_path='/')

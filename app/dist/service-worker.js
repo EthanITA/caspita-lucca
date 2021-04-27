@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lucca/precache-manifest.2218f27a7a0e454c791f2d58f78cfd93.js"
+  "/lucca/precache-manifest.bf8d9d0c4606f852193bcecb465817ca.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "caspita-lucca"});

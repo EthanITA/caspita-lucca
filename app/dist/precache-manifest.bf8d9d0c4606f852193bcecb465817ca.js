@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13356a849d70bfb52f92",
+    "revision": "4327e3bfdaee6789500e",
     "url": "/lucca/css/chunk-vendors.ca7f275c.css"
   },
   {
-    "revision": "4f0af7917ba6edba17a120e6107c0e3b",
+    "revision": "f0da48a03f2f0c1fdb540ef5f0841d12",
+    "url": "/lucca/img/brand_logo.f0da48a0.png"
+  },
+  {
+    "revision": "21c92f43578c276fa75f171844518015",
     "url": "/lucca/index.html"
   },
   {
-    "revision": "941c6b87fdafd5d34685",
-    "url": "/lucca/js/app.f792aabf.js"
+    "revision": "26fbeac09e3933cd2f11",
+    "url": "/lucca/js/app.ccef88c0.js"
   },
   {
-    "revision": "13356a849d70bfb52f92",
-    "url": "/lucca/js/chunk-vendors.5d00d32a.js"
+    "revision": "4327e3bfdaee6789500e",
+    "url": "/lucca/js/chunk-vendors.c911c745.js"
   },
   {
     "revision": "35c92c96d8212e0993c119020cb669b6",

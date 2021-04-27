@@ -1,5 +1,5 @@
 {
-  "name": "caspita-luccae",
+  "name": "caspita-lucca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "gunicorn main:app",
-    "build": "cd app && npm run build"
+    "build": "cd app && npm run build",
+    "serve": "cd app && npm run serve"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

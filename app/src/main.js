@@ -1,13 +1,16 @@
 import Vue from 'vue';
 import Buefy from 'buefy';
-import App from './App.vue';
+import 'buefy/dist/buefy.css';
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
 import './registerServiceWorker';
 import router from './router';
-import 'buefy/dist/buefy.css';
 import store from './store'
+import App from './App.vue';
 
 Vue.use(Buefy);
-
+Vue.use(VueMaterial)
 Vue.config.productionTip = false;
 
 new Vue({
