@@ -9,7 +9,7 @@ import social_template from "@/components/social/caspita/template";
 export default {
   name: "gmaps_option",
   components: {social_template},
-  props:{
+  props: {
     is_icon: {
       type: Boolean,
       required: true
@@ -17,9 +17,10 @@ export default {
   },
   data() {
     return {
-      gmaps_link: "https://g.page/caspitaSRL-lucca",
-      gmaps_title: "Caspita SRL su Google Maps",
-      gmaps_icon: require("@/assets/icons/google_maps_logo.svg"),
+      gmaps_link_web: "https://g.page/caspitaSRL-lucca",
+      gmaps_link: "https://maps.app.goo.gl/UNLD1YJkm6N92RYT7",
+      gmaps_title: "Caspita su Google Maps",
+      gmaps_icon: require("@/assets/icons/google_maps_icon.svg"),
       gmaps_alt: "Icona Google Maps",
       text: "Google Maps"
     }

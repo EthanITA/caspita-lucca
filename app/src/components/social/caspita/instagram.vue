@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       link: "https://www.instagram.com/caspita_srl/",
-      link_title: "Caspita SRL su Instagram",
-      icon: require("@/assets/icons/instagram_logo.svg"),
+      link_title: "Caspita su Instagram",
+      icon: require("@/assets/icons/instagram_icon.svg"),
       icon_alt: "Icona Instagram",
       text: "Instagram"
     }

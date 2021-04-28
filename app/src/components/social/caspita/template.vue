@@ -1,16 +1,16 @@
 <template>
   <md-button :href="link" target="_blank"
-             class="md-raised md-button has-text-centered"
-             :title="link_title"
-             :class="is_icon ? 'md-icon-button':''"
+             class="md-button has-text-centered"
+             :class="is_icon ? 'md-icon-button md-raised':''"
              :style="is_icon ? '' : 'margin:0.5rem'"
   >
-    <img style="height:1.5rem;width:1.5rem;"
+    <img style="min-width:28px;width:auto;height:28px;"
          :src="icon_src" :alt="icon_alt"
     />
     <span v-if="!is_icon" style="margin-left:0.5rem;">
-      {{button_text}}
+      {{ button_text }}
     </span>
+    <md-tooltip >{{ link_title }}</md-tooltip>
 
   </md-button>
 </template>

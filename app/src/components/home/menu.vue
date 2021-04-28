@@ -6,21 +6,28 @@
       <social_share/>
     </div>
     <div class="md-small-show">
+      <md-menu md-size="auto"  md-direction="bottom-start">
 
-      <md-menu md-size="auto" md-direction="bottom-start">
         <md-button md-menu-trigger class="md-icon-button">
           <md-icon>more_vert</md-icon>
         </md-button>
 
         <md-menu-content>
+
           <md-menu-item>
             <gmaps_option :is_icon="false"/>
           </md-menu-item>
+
+          <md-divider/>
+
           <md-menu-item>
             <instagram_option :is_icon="false"/>
           </md-menu-item>
-          <md-menu-item>
-            <social_share/>
+
+          <md-divider/>
+
+          <md-menu-item >
+            <social_share class="has-text-centered"/>
           </md-menu-item>
         </md-menu-content>
       </md-menu>
@@ -51,4 +58,5 @@ export default {
     display: none;
   }
 }
+
 </style>
