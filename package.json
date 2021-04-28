@@ -2,19 +2,21 @@
   "name": "caspita-lucca",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.21.1",
-    "buefy": "^0.9.0",
-    "core-js": "^3.6.5",
-    "register-service-worker": "^1.7.1",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
-  },
   "scripts": {
     "start": "gunicorn main:app",
     "build": "cd app && npm run build",
     "serve": "cd app && npm run serve"
+  },
+    "dependencies": {
+    "axios": "^0.21.1",
+    "buefy": "^0.9.0",
+    "core-js": "^3.6.5",
+    "material-design-icons": "^3.0.1",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
