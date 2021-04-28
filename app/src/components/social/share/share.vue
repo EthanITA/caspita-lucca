@@ -1,13 +1,33 @@
 <template>
-  <md-button class="has-text-centered is-vcentered" style="padding: 0.5rem">
-    <md-icon>
-      share
-    </md-icon>
-    <span style="margin-left:0.5rem;">
-      Condividi
-    </span>
+  <md-menu md-size="auto" md-direction="bottom-start" md-align-trigger :md-active.sync="share_menu_enabled">
+    <md-button style="height:40px" class="md-button-spaced" md-menu-trigger>
+      <md-icon class="md-button-content">
+        {{ share_icon }}
+      </md-icon>
+      <span class="md-button-content" style="margin-left:0.5rem;">{{ share_text }}</span>
+    </md-button>
 
-  </md-button>
+    <md-menu-content>
+      <ShareNetwork v-for="network in networks"
+                    :key="network.text"
+                    :network="network.network"
+                    :url="$store.state.google_maps.link"
+                    title="Caspita - centro del risparmio a Lucca"
+                    description="Caspita: Tutto per la casa... Tantissimi prodotti di buona qualità a prezzo contenuto, vieni a trovarci!"
+      >
+        <md-button class="md-button-spaced "
+                   >
+          <md-icon >
+            <img style="min-width:28px;width:auto;height:28px;"
+                 :src=" require('@/assets/icons/'+network.network + '_icon.svg')"
+                 :alt="'Icona ' + network.text"/>
+          </md-icon>
+          <span  style="margin-left:0.5rem;"> {{ network.text }}</span>
+        </md-button>
+        <md-divider/>
+      </ShareNetwork>
+    </md-menu-content>
+  </md-menu>
 </template>
 
 <script>
@@ -15,10 +35,36 @@ import Social_template from "@/components/social/caspita/template";
 
 export default {
   name: "social_share",
-  components: {Social_template}
+  components: {Social_template},
+  data() {
+    return {
+      share_icon: "share",
+      share_text: "Condividi",
+      share_menu_enabled: false,
+      networks: [
+        {network: "email", text: "Email"},
+        {network: "facebook", text: "Facebook"},
+        {network: "line", text: "Line"},
+        {network: "linkedin", text: "LinkedIn"},
+        {network: "messenger", text: "Messenger"},
+        {network: "pinterest", text: "Pinterest"},
+        {network: "reddit", text: "Reddit"},
+        {network: "telegram", text: "Telegram"},
+        {network: "twitter", text: "Twitter"},
+        {network: "whatsapp", text: "WhatsApp"},
+      ]
+    }
+  },
+  methods: {
+    share_hovered() {
+      this.share_menu_enabled = !this.share_menu_enabled
+    }
+  }
 }
 </script>
 
 <style scoped>
+.md-button .md-ripple {
 
+}
 </style>

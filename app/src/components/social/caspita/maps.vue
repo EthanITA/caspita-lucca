@@ -17,12 +17,11 @@ export default {
   },
   data() {
     return {
-      gmaps_link_web: "https://g.page/caspitaSRL-lucca",
-      gmaps_link: "https://maps.app.goo.gl/UNLD1YJkm6N92RYT7",
+      gmaps_link: this.$store.state.google_maps.link,
       gmaps_title: "Caspita su Google Maps",
       gmaps_icon: require("@/assets/icons/google_maps_icon.svg"),
       gmaps_alt: "Icona Google Maps",
-      text: "Google Maps"
+      text: this.$store.state.google_maps.text
     }
   }
 }

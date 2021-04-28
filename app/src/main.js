@@ -8,7 +8,9 @@ import './registerServiceWorker';
 import router from './router';
 import store from './store'
 import App from './App.vue';
+import VueSocialSharing from 'vue-social-sharing'
 
+Vue.use(VueSocialSharing);
 Vue.use(Buefy);
 Vue.use(VueMaterial)
 Vue.config.productionTip = false;

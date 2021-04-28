@@ -34,7 +34,16 @@ function api_call_strategy(axios_http_method, api, on_success, on_failure) {
 export default new Vuex.Store({
   state: {
     api: gcloud_api,
-    ping: ""
+    ping: "",
+    google_maps: {
+      link: "https://maps.app.goo.gl/UNLD1YJkm6N92RYT7",
+      link_web: "https://g.page/caspitaSRL-lucca",
+      text: "Google Maps"
+    },
+    instagram: {
+      link: "https://www.instagram.com/caspita_srl/",
+      text: "Instagram"
+    },
   },
   mutations: {
     // eslint-disable-next-line camelcase

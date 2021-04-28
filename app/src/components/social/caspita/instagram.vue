@@ -17,11 +17,11 @@ export default {
   },
   data() {
     return {
-      link: "https://www.instagram.com/caspita_srl/",
+      link: this.$store.state.instagram.link,
       link_title: "Caspita su Instagram",
       icon: require("@/assets/icons/instagram_icon.svg"),
       icon_alt: "Icona Instagram",
-      text: "Instagram"
+      text: this.$store.state.instagram.text
     }
   },
 }
