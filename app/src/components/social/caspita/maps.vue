@@ -19,7 +19,7 @@ export default {
     return {
       gmaps_link: "https://g.page/caspitaSRL-lucca",
       gmaps_title: "Caspita SRL su Google Maps",
-      gmaps_icon: require("@/assets/google_maps_logo.svg"),
+      gmaps_icon: require("@/assets/icons/google_maps_logo.svg"),
       gmaps_alt: "Icona Google Maps",
       text: "Google Maps"
     }
