@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="md-button"
+  <router-link to="/"  class="md-button"
      style="height: 3.25rem;width: auto"
      title="Caspita SRL: Tutto per la casa...">
     <img
@@ -8,7 +8,7 @@
       src="../../assets/brand/caspita_logo.png"
       alt="Caspita SRL brand"
     />
-  </a>
+  </router-link>
 </template>
 
 <script>
