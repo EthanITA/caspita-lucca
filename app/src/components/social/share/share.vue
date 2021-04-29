@@ -12,17 +12,17 @@
                     :key="network.text"
                     :network="network.network"
                     :url="$store.state.google_maps.link"
-                    title="Caspita - centro del risparmio a Lucca"
-                    description="Caspita: Tutto per la casa... Tantissimi prodotti di buona qualità a prezzo contenuto, vieni a trovarci!"
+                    title="Caspita SRL - centro del risparmio a Lucca"
+                    description="Tutto per la casa... Tantissimi prodotti di buona qualità a prezzo contenuto, vieni a trovarci!"
       >
         <md-button class="md-button-spaced "
-                   >
-          <md-icon >
+        >
+          <md-icon>
             <img style="min-width:28px;width:auto;height:28px;"
                  :src=" require('@/assets/icons/'+network.network + '_icon.svg')"
                  :alt="'Icona ' + network.text"/>
           </md-icon>
-          <span  style="margin-left:0.5rem;"> {{ network.text }}</span>
+          <span style="margin-left:0.5rem;"> {{ network.text }}</span>
         </md-button>
         <md-divider/>
       </ShareNetwork>
