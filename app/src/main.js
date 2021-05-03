@@ -10,6 +10,7 @@ import store from './store'
 import App from './App.vue';
 import VueSocialSharing from 'vue-social-sharing'
 import 'animate.css/animate.css';
+import 'simple-css-animations/index.css'
 
 Vue.use(VueSocialSharing);
 Vue.use(Buefy);
