@@ -1,6 +1,6 @@
 <template>
-  <md-app md-waterfall mode="fixed">
-    <md-app-toolbar class="is-large">
+  <md-app md-waterfall mode="is-transparent fixed " style="height: 100vh">
+    <md-app-toolbar>
       <div class="md-toolbar-row">
         <div class="md-toolbar-section-start">
           <brand_logo/>
@@ -10,9 +10,9 @@
         </div>
       </div>
     </md-app-toolbar>
-    <md-app-content>
-      <body/>
-      <below_body/>
+    <md-divider/>
+    <md-app-content class="hero" style="padding: 0">
+      <homepage_body class="hero-body " style="" />
     </md-app-content>
   </md-app>
 </template>
@@ -21,12 +21,12 @@
 
 
 import brand_logo from "@/components/home/brand_logo";
-import Body from "@/components/home/body";
 import Below_body from "@/components/home/below_body";
 import Menu_option from "@/components/home/menu";
+import Homepage_body from "./body";
 export default {
   name: 'homepage',
-  components: {Menu_option, Below_body, Body, brand_logo},
+  components: {Homepage_body, Menu_option, Below_body, brand_logo},
   data() {
     return {
       msg: "",
@@ -40,4 +40,5 @@ export default {
 };
 </script>
 <style scoped>
+
 </style>

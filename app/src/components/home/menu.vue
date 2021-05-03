@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="md-small-hide">
+    <div class="md-xsmall-hide">
       <gmaps_option :is_icon="true"/>
       <instagram_option :is_icon="true"/>
       <social_share/>
     </div>
-    <div class="md-small-show">
+    <div class="md-xsmall-show">
       <md-menu md-size="auto"  md-direction="bottom-start">
 
         <md-button md-menu-trigger class="md-icon-button">
@@ -47,14 +47,14 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 959px) {
-  .md-small-hide {
+@media (max-width: 600px) {
+  .md-xsmall-hide {
     display: none
   }
 }
 
-@media (min-width: 960px) {
-  .md-small-show {
+@media (min-width: 601px) {
+  .md-xsmall-show {
     display: none;
   }
 }
