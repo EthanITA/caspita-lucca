@@ -1,1 +1,2 @@
-from init_flask import get_flask_app
+from firebase import firestore
+from init_flask import app as flask_app

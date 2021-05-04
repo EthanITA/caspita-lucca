@@ -1,5 +1,7 @@
 import server
-app = server.get_flask_app()
+
+app = server.flask_app
+db = server.firestore.db
 
 
 @app.route("/api/ping")

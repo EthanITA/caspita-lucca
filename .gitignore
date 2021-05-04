@@ -1,7 +1,7 @@
 app/node_modules
 .idea
 venv
-firebase_secret.json
+server/firebase/account-service-secret.json
 node_modules
 npm-debug.log
 .DS_Store
