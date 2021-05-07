@@ -1,2 +1,2 @@
-npm run build
+#!/usr/bin/env bash
 gcloud app deploy

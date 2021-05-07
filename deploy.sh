@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
 npm run build
-git subtree push --prefix app/dist CaspitaSrl gh-pages --force
+git add app/dist -f
+git commit -m "automatic deploy" && git push CaspitaSrl `git subtree split --prefix app/dist master`:gh-pages --force
+git reset --mixed HEAD~1
 gcloud app deploy
