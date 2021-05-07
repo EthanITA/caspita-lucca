@@ -1,5 +1,11 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
+  productionSourceMap: false,
+  publicPath: process.env.NODE_ENV === 'production'
     ? '/lucca'
-    : '/'
+    : '/',
+  pwa: {
+    name: 'Caspita',
+    themeColor: '#D777DD',
+    msTileColor: '#FFFFFF'
+  }
 }
