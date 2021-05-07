@@ -53,7 +53,7 @@ export default {
 .caspita_background {
   background-position: left;
   height: 100%;
-  background-image: url("../../assets/images/store_de_le_2kpx.jpg");
+  background-image: url("../../assets/images/store_scaled.jpg");
   background-attachment: fixed;
 
 }
