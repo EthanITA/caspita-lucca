@@ -3,9 +3,17 @@
 # "#!include" directives (which insert the entries of the given .gitignore-style
 # file at that point).
 
-*
-!main.py
-!server/
-!app.yaml
-!requirements.txt
-!app/dist/
+.git/
+*/__pycache__
+*/account-service-secret.json
+.idea/
+node_modules/
+app/
+*.env
+.gitignore
+deploy.sh
+gcloud_deploy.sh
+github_deploy.sh
+heroku_server_deploy.sh
+package.json
+Procfile
