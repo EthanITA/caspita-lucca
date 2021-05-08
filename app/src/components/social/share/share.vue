@@ -64,7 +64,4 @@ export default {
 </script>
 
 <style scoped>
-.md-button .md-ripple {
-
-}
 </style>
