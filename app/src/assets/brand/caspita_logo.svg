@@ -1,4 +1,4 @@
-<svg width="1473.4" height="398.05" version="1.1" viewBox="0 0 1473.4 398.05" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1505.2" height="398.05" version="1.1" viewBox="0 0 1505.2 398.05" xmlns="http://www.w3.org/2000/svg">
  <title>Caspita</title>
  <g transform="translate(-49.144 -39.863)">
   <path d="m70.357 255a10.607 10.695 0 0 1-10.606 10.695 10.607 10.695 0 0 1-10.607-10.694 10.607 10.695 0 0 1 10.605-10.696 10.607 10.695 0 0 1 10.608 10.694l-10.607 1e-3z" fill="#940b98" fill-opacity=".97647"/>
@@ -301,5 +301,5 @@
   <path d="m365.5 98.875a9 8.75 0 0 1-8.9997 8.75 9 8.75 0 0 1-9.0003-8.7494 9 8.75 0 0 1 8.9991-8.7506 9 8.75 0 0 1 9.0009 8.7488l-9 0.0012z" fill="#ec14da" fill-opacity=".98039"/>
   <path d="m358.38 86.062a8 7.5625 0 0 1-7.9997 7.5625 8 7.5625 0 0 1-8.0003-7.562 8 7.5625 0 0 1 7.9992-7.563 8 7.5625 0 0 1 8.0008 7.5614l-8 0.0011z" fill="#0c2769" fill-opacity=".99608"/>
  </g>
- <text transform="matrix(4.0035 0 0 3.7232 -1732.7 -324.39)" fill="#8244c7" font-family="'AR PL UMing TW'" font-size="86.034px" font-weight="300" stroke-width="1.0003" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;mix-blend-mode:normal;shape-inside:url(#rect4383);white-space:pre" xml:space="preserve"><tspan x="545.50586" y="189.14701"><tspan fill="#8244c7" font-family="'AR PL UMing TW'" font-size="86.034px" font-weight="300" stroke-width="1.0003" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">aspita</tspan></tspan></text>
+ <text transform="matrix(5.4801 0 0 3.5105 -2542.4 -296.55)" fill="#b648de" font-family="'Baskerville Old Face'" font-size="86.034px" stroke-width="1.0001" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;shape-inside:url(#rect4383);white-space:pre" xml:space="preserve"><tspan x="545.50586" y="181.81526"><tspan fill="#b648de" font-family="'Baskerville Old Face'" font-size="86.034px" stroke-width="1.0001" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">aspita</tspan></tspan></text>
 </svg>
