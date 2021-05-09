@@ -13,7 +13,7 @@
    height="151.50027"
    viewBox="0 0 679.05384 151.50028"
    sodipodi:docname="caspita_icon_original_inkscape.svg"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.0.2 (1.0.2+r75+1)">
   <title
      id="title8911">Caspita logo original</title>
   <metadata
@@ -48,18 +48,30 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-height="1009"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="360.74702"
-     inkscape:cy="-7.0076291"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="544.80135"
+     inkscape:cy="58.325416"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
      inkscape:window-maximized="1"
      inkscape:current-layer="g18"
      showguides="false"
      inkscape:document-rotation="0" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="background">
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect16307"
+       width="679"
+       height="151.50027"
+       x="0"
+       y="0" />
+  </g>
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -1740,10 +1752,6 @@
        d="m 28.076498,36.294388 c 0.03216,-0.06126 0.333666,-0.637623 0.670002,-1.280811 l 0.611521,-1.16943 1.294791,-1.807132 1.29479,-1.807132 1.408335,-1.597886 1.408334,-1.597885 0.773438,-0.606926 0.773437,-0.606926 0.799289,-2.66e-4 c 0.43961,-1.47e-4 0.797604,0.0025 0.795543,0.0058 -0.0021,0.0033 -0.556858,0.439877 -1.232883,0.970094 l -1.229136,0.964031 -1.357093,1.539672 -1.357093,1.539672 -1.260048,1.757813 -1.260048,1.757812 -0.53559,1.023438 -0.53559,1.023437 -0.56024,0.002 -0.56024,0.002 z"
        id="path4229" />
     <path
-       style="fill:#9e9cc1;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 50.257562,117.81445 v -0.41263 z"
-       id="path7542" />
-    <path
        style="fill:#9e9cc1;fill-opacity:1;stroke:none;stroke-width:0.0531435;stroke-linejoin:round"
        d="m 50.264238,120.56319 v -2.74556 h 0.248592 0.248592 v -0.13811 -0.13811 h 6.811427 6.811427 v 0.0276 0.0276 h -6.402631 -6.402631 v 2.21524 2.21523 h 6.402631 6.402631 v 0.64082 0.64081 h -7.060019 -7.060019 z"
        id="path7544" />
@@ -3063,6 +3071,48 @@
        style="fill:#f9f9f9;fill-opacity:0;stroke:none;stroke-width:4.81;stroke-linejoin:round"
        id="path8298"
        d="m 260.96723,18.543897 c -0.59122,0.299637 -1.18326,0.597767 -1.77657,0.89326 -0.53009,0.263957 -1.07622,0.498422 -1.64181,0.675144 0,0 -0.16316,0.126567 -0.16316,0.126567 v 0 c 0.57559,-0.194096 1.13713,-0.429359 1.68008,-0.701835 0.57392,-0.28615 1.14637,-0.575257 1.72477,-0.852312 0,0 0.17669,-0.140824 0.17669,-0.140824 z" />
+    <rect
+       style="fill:#9e9cc1;fill-opacity:1"
+       id="rect14093"
+       width="0.50342798"
+       height="0.26916"
+       x="50.257561"
+       y="117.5453" />
+    <rect
+       style="fill:#b4477f;fill-opacity:1"
+       id="rect14095"
+       width="0.52606601"
+       height="0.26824999"
+       x="49.738171"
+       y="117.54939" />
+    <rect
+       style="fill:#b4477f;fill-opacity:1"
+       id="rect14097"
+       width="0.012169906"
+       height="5.4853878"
+       x="50.256565"
+       y="117.81764" />
+    <rect
+       style="fill:#9e9cc1;fill-opacity:1"
+       id="rect14101"
+       width="9.9706383"
+       height="0.2010227"
+       x="50.264236"
+       y="117.34837" />
+    <rect
+       style="fill:#9e9cc1;fill-opacity:1"
+       id="rect14105"
+       width="9.9595184"
+       height="0.24274892"
+       x="50.275356"
+       y="123.30873" />
+    <rect
+       style="fill:#b4477f;fill-opacity:1"
+       id="rect14107"
+       width="25.213564"
+       height="0.20100659"
+       x="25.050673"
+       y="117.34837" />
   </g>
   <g
      inkscape:groupmode="layer"

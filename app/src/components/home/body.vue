@@ -3,20 +3,13 @@
   ani-timing-ease-out ani-bg-pan-left ani-10000">
 
     <div
-      class="box"
-      :class="box_logo_animation"
-      style="background-color: rgba(255,255,255,0.55)">
+      class="image"
+      :class="box_logo_animation">
       <img
-        src="../../assets/brand/new_icon/caspita_logo_full_original.png"
+        src="../../assets/brand/original/caspita_icon_original.svg"
+        class="is-rounded"
         alt="caspita logo"/>
-      <div
-        class="content">
-        <p class="text has-text-centered has-text-weight-bold">
-          Caspita SRL - Via Nuova per Pisa, 354, Lucca (LU)
-        </p>
-      </div>
     </div>
-    <div class=""/>
   </div>
 </template>
 
