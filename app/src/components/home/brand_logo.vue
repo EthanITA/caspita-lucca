@@ -5,7 +5,7 @@
     <img
       style="height: inherit;width: auto"
 
-      src="../../assets/brand/caspita_logo.png"
+      src="../../assets/brand/new_icon/caspita_logo.svg"
       alt="Caspita SRL brand"
     />
   </router-link>

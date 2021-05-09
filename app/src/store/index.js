@@ -44,16 +44,23 @@ export default new Vuex.Store({
       link: "https://www.instagram.com/caspita_srl/",
       text: "Instagram"
     },
+    loaded: false
   },
   mutations: {
     // eslint-disable-next-line camelcase
     setApi(state, is_heroku) {
       state.api = is_heroku ? heroku_api : gcloud_api;
+    },
+    set_loaded_home_page(state, loaded) {
+      state.loaded = loaded
     }
   },
   getters: {
     getApi(state) {
       return state.api ? state.api : gcloud_api;
+    },
+    get_loaded(state) {
+      return state.loaded;
     }
   },
   actions: {

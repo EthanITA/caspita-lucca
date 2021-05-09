@@ -6,9 +6,9 @@
       class="box"
       :class="box_logo_animation"
       style="background-color: rgba(255,255,255,0.55)">
-      <b-image
-        :src="require('@/assets/brand/caspita_logo_full_original.png')"
-      />
+      <img
+        src="../../assets/brand/new_icon/caspita_logo_full_original.png"
+        alt="caspita logo"/>
       <div
         class="content">
         <p class="text has-text-centered has-text-weight-bold">
