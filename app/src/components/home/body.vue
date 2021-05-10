@@ -3,7 +3,7 @@
   ani-timing-ease-out ani-bg-pan-left ani-10000">
 
     <div
-      class="image ani-timing-ease-out ani-1200">
+      class="image">
       <img
         src="../../assets/brand/original/caspita_icon_original.svg"
         class="is-rounded"
