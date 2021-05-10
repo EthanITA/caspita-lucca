@@ -885,12 +885,12 @@ export default {
       this.loader_div_anim = "ani-bounce-out-right ani-2200"
       setTimeout(() => {
         this.loader_div_anim = "ani-slide-out-blurred-right ani-800"
-      }, 1400)
+      }, 900)
 
       setTimeout(() => {
         this.show_loader = false
         this.$store.state.homepage_loader_loaded = true;
-      }, 1700)
+      }, 1350)
     },
     animate_caspita_icon() {
       // animate Caspita Icon
