@@ -44,7 +44,7 @@ export default new Vuex.Store({
       link: "https://www.instagram.com/caspita_srl/",
       text: "Instagram"
     },
-    loaded: false
+    homepage_loader_loaded: false
   },
   mutations: {
     // eslint-disable-next-line camelcase

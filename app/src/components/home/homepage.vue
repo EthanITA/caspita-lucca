@@ -1,7 +1,7 @@
 <template>
   <div>
-    <loader v-if="!this.$store.state.loaded"/>
-    <div v-show="this.$store.state.loaded">
+    <loader/>
+    <div v-show="this.$store.state.homepage_loader_loaded" class="ani-slide-in-left ani-800">
       <md-app style="height: 100vh;">
         <md-app-toolbar>
           <div class="md-toolbar-row">
@@ -36,20 +36,6 @@ import Loader from "./loader";
 export default {
   name: 'homepage',
   components: {Loader, Homepage_body, Menu_option, Below_body, brand_logo},
-  data() {
-    return {
-      msg: "",
-    };
-  },
-  methods: {},
-  created() {
-    console.log(this.msg);
-    this.$store.dispatch("ping");
-    setTimeout(() => {
-      this.$store.commit("set_loaded_home_page", true)
-    }, 2500)
-
-  },
 };
 </script>
 <style scoped>
