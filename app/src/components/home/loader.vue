@@ -1,6 +1,6 @@
 <template>
   <div v-if="show_loader" class="hero is-fullheight" :class="loader_div_anim">
-    <div class="hero-body container has-text-centered">
+    <div class="hero-body container has-text-centered ">
       <div class="container ani-slide-in-blurred-left ani-2200 ani-delay-100">
 
         <svg id="svg598" style="max-height:80vh;height:300px;width:auto" viewBox="0 0 633 633"
@@ -882,15 +882,16 @@ export default {
   },
   methods: {
     on_animation_finished() {
-      this.loader_div_anim = "ani-bounce-out-right ani-2200"
+      let base_ms_wait = 1500
+      this.loader_div_anim = "ani-pulsate-fwd ani-500 ani-count-3"
       setTimeout(() => {
-        this.loader_div_anim = "ani-slide-out-blurred-right ani-800"
-      }, 900)
+        this.loader_div_anim = "ani-roll-out-blurred-right ani-800"
+      }, base_ms_wait + 200)
 
       setTimeout(() => {
         this.show_loader = false
         this.$store.state.homepage_loader_loaded = true;
-      }, 1350)
+      }, base_ms_wait + 500)
     },
     animate_caspita_icon() {
       // animate Caspita Icon
@@ -906,19 +907,22 @@ export default {
 
       const allPaths = group.querySelectorAll("path");
       let itemNum = 0;
+      const on_animation_finished = this.on_animation_finished;
 
       function startOnePathMoving() {
         // Add the class that moves the path onto screen
         allPaths[itemNum++].classList.add("onto-screen-anim");
         // if there are paths left, then call this function again
         // after a short delay to start the next one moving
-        if (itemNum < allPaths.length)
+        if (itemNum < allPaths.length) {
           setTimeout(startOnePathMoving, INTER_PATH_DELAY);
+        } else {
+          setTimeout(on_animation_finished, 600)
+        }
       }
 
       // Start the first timeout to get the animation started
       setTimeout(startOnePathMoving, INTER_PATH_DELAY)
-      setTimeout(this.on_animation_finished, INTER_PATH_DELAY * allPaths.length + 1400)
     }
   },
   mounted() {
