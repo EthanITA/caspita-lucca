@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import homepage_body from '../components/home/homepage.vue';
+import private_login from "@/components/private_area/login";
 import virtual_tour from "../components/home/virtual_tour";
 import login from "@/components/private_area/login";
 import clothes from "@/components/private_area/receipt/clothes";
@@ -26,7 +27,7 @@ const router = new Router({
     {
       path: "/private_login",
       name: "private_login",
-      component: login,
+      component: private_login,
     },
     {
       path: "/internal/receipt/clothes",
