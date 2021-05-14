@@ -1,11 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import homepage_body from '../components/home/homepage.vue';
-import private_login from "@/components/private_area/login";
+import private_login from "../components/private_area/login";
 import virtual_tour from "../components/home/virtual_tour";
-import login from "@/components/private_area/login";
-import clothes from "@/components/private_area/receipt/clothes";
-import dashboard from "@/components/private_area/dashboard";
+import clothes from "../components/private_area/receipt/clothes";
+import dashboard from "../components/private_area/dashboard";
 
 Vue.use(Router);
 
@@ -43,9 +42,19 @@ const router = new Router({
     }
   ],
 });
+
+function authenticate(password) {
+
+}
+
 router.beforeEach((to, from, next) => {
   if (to.meta.requires_auth) {
-    console.log(to.meta.requires_auth)
+    if (!authenticate())
+      next({
+        path: '/'
+      })
+    else
+      next()
   } else {
     next()
   }
