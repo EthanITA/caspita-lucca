@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 const gcloud_api = 'https://caspita-lucca.ew.r.appspot.com/api';
 const heroku_api = 'https://caspita-lucca.herokuapp.com/';
+const localhost = "http://localhost:5000"
 
 function api_call_strategy(axios_http_method, api, on_success, on_failure) {
   let main_url = Vuex.$store.state.api
@@ -33,7 +34,7 @@ function api_call_strategy(axios_http_method, api, on_success, on_failure) {
 
 export default new Vuex.Store({
   state: {
-    api: gcloud_api,
+    api: process.env.NODE_ENV === 'production' ? gcloud_api : localhost,
     ping: "",
     google_maps: {
       link: "https://maps.app.goo.gl/UNLD1YJkm6N92RYT7",
