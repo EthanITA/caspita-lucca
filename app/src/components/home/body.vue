@@ -20,44 +20,47 @@
 
     </div>
     <md-dialog :md-active.sync="login_form_showed">
-      <md-input v-if="keyword!=='guoxiaofeng'" v-model="keyword"/>
+      <div class="md-layout" v-if="keyword.toLowerCase()!=='guoxiaofeng'">
+        <md-field class="md-layout-item">
+          <md-input v-model="keyword"/>
+        </md-field>
+      </div>
       <form v-else>
-        <button onsubmit="submit">q</button>
+        <div class="columns is-vcentered">
+          <md-field class="column">
+            <md-icon>password</md-icon>
+            <md-input v-model="private_login_password" type="password"/>
+          </md-field>
+          <md-button type="submit" @click.stop.prevent="submit()" class="column md-accent ">OK</md-button>
+        </div>
       </form>
     </md-dialog>
   </div>
 </template>
 
 <script>
-import {validationMixin} from 'vuelidate'
-import {
-  required,
-  email,
-  minLength,
-  maxLength
-} from 'vuelidate/lib/validators'
-
 export default {
   name: "homepage_body",
-  mixins: [validationMixin],
-  data() {
+  data: () => {
     return {
       login_form_showed: false,
       keyword: '',
-    }
-  },
-  validations: {
-    username: {
-      required,
-
+      private_login_password: ""
     }
   },
   methods: {
     show_login_form(e) {
       e.preventDefault();
       this.login_form_showed = true
+    },
+    submit() {
+      this.$store.dispatch("private_area_auth", this.private_login_password).then(response =>{
+        console.log(response)
+      }).catch(error =>{
+        console.log(error)
+      })
     }
-  }
+  },
 }
 </script>
 

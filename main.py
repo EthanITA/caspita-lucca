@@ -13,6 +13,12 @@ def ping():
 
 
 @server.catch_internal_server_error
+@app.route("/private/login", methods=["POST"])
+def private_login():
+    return "OK", 200
+
+
+@server.catch_internal_server_error
 @app.route("/api/receipt/clothes/add", methods=["POST"])
 def create_clothes_receipt():
     """

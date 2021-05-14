@@ -77,6 +77,18 @@ export default new Vuex.Store({
       )
 
     },
+    async private_area_auth({state}, password) {
+      // private authentication that returns a promise
+      return axios.post(state.api + "/private/login", {
+        "p": password
+      }).then((r) => {
+        return r
+      }).catch((error) => {
+        throw error;
+      })
+
+    }
+
 
   },
 })
