@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import homepage from '../components/home/homepage.vue';
-import loader from '../components/home/loader.vue'
+import homepage_body from '../components/home/homepage.vue';
+import virtual_tour from "../components/home/virtual_tour";
 
 Vue.use(Router);
 
@@ -11,13 +11,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'homepage',
-      component: homepage,
+      name: 'homepage_body',
+      component: homepage_body,
     },
     {
-      path:'/loader',
-      name: 'name',
-      component: loader
+      path: "/virtual_tour",
+      name: "virtual_tour",
+      component: virtual_tour
+
     }
   ],
 });

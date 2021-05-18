@@ -3,11 +3,19 @@
   ani-timing-ease-out ani-bg-pan-left ani-10000">
 
     <div
-      class="image">
+      class="has-text-centered image is-rounded
+      ani-slide-in-elliptic-right-bck ani-1300 ani-timing-ease-out">
       <img
         src="../../assets/brand/original/caspita_icon_original.svg"
-        class="is-rounded"
         alt="caspita logo"/>
+      <router-link to="/virtual_tour" tag="button" class="button is-rounded">
+        <span class="icon is-small">
+          <md-icon>tour</md-icon>
+        </span>
+        <span>Fai un Tour</span>
+      </router-link>
+
+
     </div>
   </div>
 </template>

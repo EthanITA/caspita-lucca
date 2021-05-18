@@ -882,16 +882,16 @@ export default {
   },
   methods: {
     on_animation_finished() {
-      let base_ms_wait = 1500
-      this.loader_div_anim = "ani-pulsate-fwd ani-500 ani-count-3"
+      let base_ms_wait = 1000
+      this.loader_div_anim = "ani-pulsate-fwd ani-500 ani-count-2"
       setTimeout(() => {
-        this.loader_div_anim = "ani-roll-out-blurred-right ani-800"
-      }, base_ms_wait + 200)
+        this.loader_div_anim = "ani-slide-out-blurred-right ani-800 ani-timing-ease-in"
+      }, base_ms_wait + 100)
 
       setTimeout(() => {
         this.show_loader = false
         this.$store.state.homepage_loader_loaded = true;
-      }, base_ms_wait + 500)
+      }, base_ms_wait + 700)
     },
     animate_caspita_icon() {
       // animate Caspita Icon
