@@ -3,9 +3,10 @@
   ani-timing-ease-out ani-bg-pan-left ani-10000">
 
     <div
-      class="has-text-centered image is-rounded
+      class="has-text-centered image
       ani-slide-in-elliptic-right-bck ani-1300 ani-timing-ease-out">
       <img
+        class="is-rounded"
         src="../../assets/brand/original/caspita_icon_original.svg"
         alt="caspita logo"/>
       <router-link to="/virtual_tour" tag="button" class="button is-rounded">
