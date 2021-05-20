@@ -16,9 +16,6 @@
         <md-app-content class="hero" style="padding: 0">
           <homepage_body class="hero-body"/>
         </md-app-content>
-        <md-app-content>
-          <below_body/>
-        </md-app-content>
       </md-app>
     </div>
 
@@ -38,6 +35,9 @@ import Menu_option from "@/components/header/menu";
 export default {
   name: 'homepage',
   components: {Menu_option, Brand_logo, Loader, Homepage_body, Below_body},
+  mounted() {
+    this.$store.dispatch("ping")
+  }
 };
 </script>
 <style scoped>

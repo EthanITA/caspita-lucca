@@ -65,18 +65,8 @@ export default new Vuex.Store({
   },
   actions: {
     async ping({state}) {
-      axios.get(`${state.api}/ping`).then((response) => {
-          console.log(response.data)
-          state.ping = response.data;
-        }
-      ).catch((error) => {
-          console.error(error)
-          state.ping = "error"
-        }
-      )
-
-    },
-
+      axios.get(`${state.api}/ping`).then()
+    }
   },
 })
 
