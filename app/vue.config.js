@@ -6,6 +6,9 @@ module.exports = {
   pwa: {
     name: 'Caspita',
     themeColor: '#D777DD',
-    msTileColor: '#FFFFFF'
-  }
+    msTileColor: '#FFFFFF',
+    workboxOptions: {
+      skipWaiting: true
+    }
+  },
 }
