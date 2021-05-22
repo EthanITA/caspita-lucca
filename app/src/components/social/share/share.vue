@@ -31,11 +31,9 @@
 </template>
 
 <script>
-import Social_template from "@/components/social/caspita/template";
 
 export default {
   name: "social_share",
-  components: {Social_template},
   data() {
     return {
       share_icon: "share",
@@ -44,22 +42,17 @@ export default {
       networks: [
         {network: "email", text: "Email"},
         {network: "facebook", text: "Facebook"},
-        {network: "line", text: "Line"},
-        {network: "linkedin", text: "LinkedIn"},
+        //{network: "line", text: "Line"},
+        //{network: "linkedin", text: "LinkedIn"},
         {network: "messenger", text: "Messenger"},
-        {network: "pinterest", text: "Pinterest"},
-        {network: "reddit", text: "Reddit"},
+        //{network: "pinterest", text: "Pinterest"},
+        //{network: "reddit", text: "Reddit"},
         {network: "telegram", text: "Telegram"},
         {network: "twitter", text: "Twitter"},
         {network: "whatsapp", text: "WhatsApp"},
       ]
     }
   },
-  methods: {
-    share_hovered() {
-      this.share_menu_enabled = !this.share_menu_enabled
-    }
-  }
 }
 </script>
 

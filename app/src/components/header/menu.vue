@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div class="md-xsmall-hide">
-      <gmaps_option :is_icon="true"/>
-      <instagram_option :is_icon="true"/>
-      <social_share/>
+    <div class="md-xsmall-hide md-layout">
+      <gmaps_option :is_icon="true" class="md-layout-item"/>
+      <instagram_option :is_icon="true" class="md-layout-item"/>
+      <qr_code class="md-layout-item"/>
+      <social_share class="md-layout-item"/>
     </div>
     <div class="md-xsmall-show">
       <md-menu md-size="auto"  md-direction="bottom-start">
@@ -39,10 +40,11 @@
 import Gmaps_option from "@/components/social/caspita/maps";
 import Instagram_option from "@/components/social/caspita/instagram";
 import Social_share from "@/components/social/share/share";
+import Qr_code from "../social/share/qr_code";
 
 export default {
   name: "menu_option",
-  components: {Social_share, Instagram_option, Gmaps_option},
+  components: {Qr_code, Social_share, Instagram_option, Gmaps_option},
 }
 </script>
 
