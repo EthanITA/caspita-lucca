@@ -1,7 +1,7 @@
 <template>
   <md-menu md-size="auto" md-direction="bottom-start" md-align-trigger :md-active.sync="share_menu_enabled">
     <md-button style="height:40px" class="md-button-spaced" md-menu-trigger>
-      <md-icon class="md-button-content">
+      <md-icon class="md-button-content" style="min-width:28px;width:auto;height:28px;">
         {{ share_icon }}
       </md-icon>
       <span class="md-button-content" style="margin-left:0.5rem;">{{ share_text }}</span>

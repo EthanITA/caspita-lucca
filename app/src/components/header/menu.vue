@@ -7,7 +7,7 @@
       <social_share class="md-layout-item"/>
     </div>
     <div class="md-xsmall-show">
-      <md-menu md-size="auto"  md-direction="bottom-start">
+      <md-menu md-size="auto" md-direction="bottom-start">
 
         <md-button md-menu-trigger class="md-icon-button">
           <md-icon>more_vert</md-icon>
@@ -26,8 +26,13 @@
           </md-menu-item>
 
           <md-divider/>
+          <md-menu-item>
 
-          <md-menu-item >
+            <qr_code :is_icon="false"/>
+          </md-menu-item>
+          <md-divider/>
+
+          <md-menu-item>
             <social_share class="has-text-centered"/>
           </md-menu-item>
         </md-menu-content>
