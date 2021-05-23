@@ -1,14 +1,19 @@
 <template>
-  <social_template :link="gmaps_link" :link_title="gmaps_title" :is_icon="is_icon"
-                   :icon_src="gmaps_icon" :icon_alt="gmaps_alt" :button_text="text"/>
+  <div>
+    <rounded-button @click.native="open_gmaps"
+                    :is_icon="is_icon" :has_img="true" :img_src="gmaps_icon" :img_alt="gmaps_alt" :tooltip="gmaps_title"
+                    :is_raised="is_icon"
+                    :description="text"
+    />
+  </div>
 </template>
 
 <script>
-import social_template from "@/components/social/caspita/template";
+import RoundedButton from "../utilities/rounded-button";
 
 export default {
   name: "gmaps_option",
-  components: {social_template},
+  components: {RoundedButton},
   props: {
     is_icon: {
       type: Boolean,
@@ -22,6 +27,11 @@ export default {
       gmaps_icon: require("@/assets/icons/google_maps_icon.svg"),
       gmaps_alt: "Icona Google Maps",
       text: this.$store.state.google_maps.text
+    }
+  },
+  methods: {
+    open_gmaps() {
+      window.open(this.gmaps_link, '_blank');
     }
   }
 }

@@ -1,14 +1,18 @@
 <template>
-  <social_template :link="link" :link_title="link_title" :is_icon="is_icon"
-                   :icon_src="icon" :icon_alt="icon_alt" :button_text="text"/>
+  <div>
+    <rounded-button @click.native="open_instagram"
+                    :is_icon="is_icon" :has_img="true" :img_src="icon" :img_alt="icon_alt" :tooltip="link_title"
+                    :description="text" :is_raised="is_icon"
+    />
+  </div>
 </template>
 
 <script>
-import social_template from "@/components/social/caspita/template";
+import RoundedButton from "../utilities/rounded-button";
 
 export default {
   name: "instagram_option",
-  components: {social_template},
+  components: {RoundedButton},
   props: {
     is_icon: {
       type: Boolean,
@@ -24,6 +28,11 @@ export default {
       text: this.$store.state.instagram.text
     }
   },
+  methods: {
+    open_instagram() {
+      window.open(this.link, '_blank')
+    }
+  }
 }
 </script>
 

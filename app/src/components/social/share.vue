@@ -1,6 +1,8 @@
 <template>
   <md-menu md-size="auto" md-direction="bottom-start" md-align-trigger :md-active.sync="share_menu_enabled">
-    <rounded-button :md_icon="share_icon" :description="share_text" md-menu-trigger/>
+    <rounded-button :md_icon="share_icon" :description="share_text" :is_raised="false"
+                    @click.native="share_menu_enabled=!share_menu_enabled"
+    />
 
     <md-menu-content>
       <ShareNetwork v-for="network in networks"
@@ -22,7 +24,7 @@
 
 <script>
 
-import RoundedButton from "../../rounded-button";
+import RoundedButton from "../utilities/rounded-button";
 
 export default {
   name: "social_share",

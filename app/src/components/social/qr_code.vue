@@ -2,7 +2,7 @@
   <div>
     <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed">
       <md-dialog-title>QR Code di Caspita</md-dialog-title>
-      <div ref="qart" class="column">
+      <div ref="qart">
       </div>
       <md-dialog-actions>
         <md-button class="md-primary" @click="save_qrcode">
@@ -10,27 +10,20 @@
         </md-button>
       </md-dialog-actions>
     </md-dialog>
-    <md-button @click="show_qrcode_dialog(true)"
-               class="md-button has-text-centered"
-               :class="is_icon ? 'md-icon-button md-raised':''"
-               :style="is_icon ? '' : 'margin:0.5rem'"
-    >
-      <md-icon class="material-icons-two-tone" style="min-width:28px;width:auto;height:28px;">qr_code_2</md-icon>
-      <span v-if="!is_icon" style="margin-left:0.5rem;">
-        QR Code
-      </span>
-      <md-tooltip>QR Code del sito</md-tooltip>
-
-    </md-button>
+    <rounded-button @click.native="show_qrcode_dialog(true)" :is_icon="is_icon" md_icon="qr_code_2"
+                    :tooltip="is_icon?'QR Code di Caspita':''" :is_raised="is_icon"
+                    description="QR Code"/>
   </div>
 </template>
 
 <script>
 import QArt from 'qartjs';
+import RoundedButton from "../utilities/rounded-button";
 
 const qrcode_link = process.env.NODE_ENV === 'production' ? window.location.href : "https://caspitasrl.github.io/lucca"
 export default {
   name: "qr_code",
+  components: {RoundedButton},
   props: {
     is_icon: {
       type: Boolean,
