@@ -1,7 +1,7 @@
 <template>
   <header class="columns is-vcentered is-mobile">
 
-    <div class="column" style="margin-left: 2rem">
+    <div class="column" style="margin-left: 0.5rem">
       <brand_logo/>
     </div>
     <div class="column">
