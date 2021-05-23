@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="navbar-item">
     <div class="md-xsmall-hide md-layout">
-      <gmaps_option :is_icon="true" class="md-layout-item"/>
+      <gmaps_option :is_icon="true" class="md-layout-item "/>
       <instagram_option :is_icon="true" class="md-layout-item"/>
       <qr_code class="md-layout-item"/>
       <social_share class="md-layout-item"/>
     </div>
     <div class="md-xsmall-show">
-      <md-menu md-size="auto" md-direction="bottom-start">
+      <md-menu class=" is-justify-content-flex-end is-flex" md-size="auto" md-direction="bottom-end">
 
         <md-button md-menu-trigger class="md-icon-button">
           <md-icon>more_vert</md-icon>
@@ -15,26 +15,20 @@
 
         <md-menu-content>
 
-          <md-menu-item>
-            <gmaps_option :is_icon="false"/>
-          </md-menu-item>
+          <gmaps_option :is_icon="false"/>
 
           <md-divider/>
 
-          <md-menu-item>
-            <instagram_option :is_icon="false"/>
-          </md-menu-item>
+          <instagram_option :is_icon="false"/>
 
           <md-divider/>
-          <md-menu-item>
 
-            <qr_code :is_icon="false"/>
-          </md-menu-item>
+          <qr_code :is_icon="false"/>
+
           <md-divider/>
 
-          <md-menu-item>
-            <social_share class="has-text-centered"/>
-          </md-menu-item>
+          <social_share/>
+
         </md-menu-content>
       </md-menu>
     </div>
@@ -42,10 +36,10 @@
 </template>
 
 <script>
-import Gmaps_option from "@/components/social/caspita/maps";
-import Instagram_option from "@/components/social/caspita/instagram";
-import Social_share from "@/components/social/share/share";
-import Qr_code from "../social/share/qr_code";
+import Gmaps_option from "../social/maps";
+import Instagram_option from "../social/instagram";
+import Social_share from "../social/share";
+import Qr_code from "../social/qr_code";
 
 export default {
   name: "menu_option",
