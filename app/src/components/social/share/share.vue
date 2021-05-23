@@ -1,11 +1,6 @@
 <template>
   <md-menu md-size="auto" md-direction="bottom-start" md-align-trigger :md-active.sync="share_menu_enabled">
-    <md-button style="height:40px" class="md-button-spaced" md-menu-trigger>
-      <md-icon class="md-button-content" style="min-width:28px;width:auto;height:28px;">
-        {{ share_icon }}
-      </md-icon>
-      <span class="md-button-content" style="margin-left:0.5rem;">{{ share_text }}</span>
-    </md-button>
+    <rounded-button :md_icon="share_icon" :description="share_text" md-menu-trigger/>
 
     <md-menu-content>
       <ShareNetwork v-for="network in networks"
@@ -15,15 +10,10 @@
                     title="Caspita SRL - centro del risparmio a Lucca"
                     description="Tutto per la casa... Tantissimi prodotti di buona qualità a prezzo contenuto, vieni a trovarci!"
       >
-        <md-button class="md-button-spaced "
-        >
-          <md-icon>
-            <img style="min-width:28px;width:auto;height:28px;"
-                 :src=" require('@/assets/icons/'+network.network + '_icon.svg')"
-                 :alt="'Icona ' + network.text"/>
-          </md-icon>
-          <span style="margin-left:0.5rem;"> {{ network.text }}</span>
-        </md-button>
+        <rounded-button :has_img="true" :img_src="require('@/assets/icons/'+network.network + '_icon.svg')"
+                        :img_alt="'Icona ' + network.text" :description="network.text"
+                        :is_raised="false"
+        />
         <md-divider/>
       </ShareNetwork>
     </md-menu-content>
@@ -32,8 +22,11 @@
 
 <script>
 
+import RoundedButton from "../../rounded-button";
+
 export default {
   name: "social_share",
+  components: {RoundedButton},
   data() {
     return {
       share_icon: "share",
