@@ -7,7 +7,7 @@
       ani-slide-in-elliptic-right-bck ani-1300 ani-timing-ease-out">
       <img
         class="is-rounded"
-        src="../../assets/brand/original/caspita_icon_original.svg"
+        src="../../assets/brand/original/caspita_icon.svg"
         alt="caspita logo"/>
       <router-link to="/virtual_tour" tag="button" class="button is-rounded">
         <span class="icon is-small">
