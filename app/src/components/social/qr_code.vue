@@ -20,7 +20,6 @@
 import QArt from 'qartjs';
 import RoundedButton from "../utilities/rounded-button";
 
-const qrcode_link = process.env.NODE_ENV === 'production' ? window.location.href : "https://caspitasrl.github.io/lucca"
 export default {
   name: "qr_code",
   components: {RoundedButton},
@@ -34,7 +33,7 @@ export default {
     return {
       qrcode_showed: false,
       config: {
-        value: qrcode_link,
+        value: "",
         imagePath: require("@/assets/brand/new_icon/caspita_icon.svg"),
         filter: "color",
         size: 500
@@ -57,6 +56,8 @@ export default {
     }
   },
   mounted() {
+    this.value = this.$store.getters.is_production ?
+      window.location.href : "https://caspitasrl.github.io/lucca" + window.location.pathname
   }
 }
 </script>

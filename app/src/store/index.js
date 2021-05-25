@@ -61,6 +61,9 @@ export default new Vuex.Store({
     },
     get_loaded(state) {
       return state.loaded;
+    },
+    is_production(){
+      return process.env.NODE_ENV === 'production'
     }
   },
   actions: {
