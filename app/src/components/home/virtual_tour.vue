@@ -1,13 +1,34 @@
 <template>
-  <div style="width: 100vw;height: 100vh">
+  <div :style="this.$store.state.background_color_style">
+    <brand_logo style="position: absolute"></brand_logo>
+    <b-loading :active="!iframe_loaded" :is-full-page="false"/>
+    <div class="resp-container">
+      <iframe class="resp-iframe"
+              @load="iframe_loaded=true"
+              style="width: 100vw;height: 100vh"
+              src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
+              frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+              allowvr="true"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr">
 
-    <iframe style="max-width:100%;width:99%;height:99%;"
-            src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
-            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allowvr="true"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr"></iframe>
+      </iframe>
+    </div>
   </div>
-
 </template>
-<style scoped>
+<script>
+import Toolbar from "../header/toolbar";
+import Caspita_app from "../caspita_app";
+import Brand_logo from "../header/brand";
 
+export default {
+  components: {Brand_logo, Caspita_app, Toolbar},
+  data: () => {
+    return {
+      iframe_loaded: false
+    }
+  }
+}
+</script>
+
+<style scoped>
 </style>

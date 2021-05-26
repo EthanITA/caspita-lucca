@@ -6,17 +6,20 @@
                       'button is-rounded':is_rounded && !is_icon,
                       'md-icon-button':is_icon
              }">
+      <slot/>
       <md-icon v-if="has_img && !is_icon">
         <img
           :style="icon_size"
           :src="img_src"
           :alt="img_alt"/>
       </md-icon>
-
-      <md-icon v-else-if="md_icon"
+      <md-icon  v-else-if="md_icon"
                :style="icon_size"
       >
+        <span class="material-icons-two-tone">
+
         {{ md_icon }}
+        </span>
       </md-icon>
       <img v-else
            :style="icon_size"
@@ -63,9 +66,9 @@ export default {
     tooltip: {
       type: String,
     },
-    tooltip_position:{
-      type:String,
-      default:"is-bottom"
+    tooltip_position: {
+      type: String,
+      default: "is-bottom"
     }
   },
   data: () => {

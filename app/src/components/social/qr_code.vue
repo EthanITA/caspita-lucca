@@ -1,9 +1,13 @@
 <template>
   <div>
-    <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed">
-      <md-dialog-title>QR Code di Caspita</md-dialog-title>
-      <div ref="qart">
-      </div>
+    <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed" class="has-text-centered">
+      <md-dialog-title class="is-size-3">
+        QR Code
+      </md-dialog-title>
+      <md-dialog-content class="content">
+        <div ref="qart" />
+        <a :href="config.value" class="has-text-info is-size-5">{{ config.value }}</a>
+      </md-dialog-content>
       <md-dialog-actions>
         <md-button class="md-primary" @click="save_qrcode">
           Salva QR Code
@@ -34,7 +38,7 @@ export default {
       qrcode_showed: false,
       config: {
         value: "",
-        imagePath: require("@/assets/brand/new_icon/caspita_icon.svg"),
+        imagePath: require("../../assets/brand/new_icon/caspita_icon.svg"),
         filter: "color",
         size: 500
       },
@@ -56,8 +60,8 @@ export default {
     }
   },
   mounted() {
-    this.value = this.$store.getters.is_production ?
-      window.location.href : "https://caspitasrl.github.io/lucca" + window.location.pathname
+    this.config.value = this.$store.getters.is_production ?
+      window.location.href : "https://caspitasrl.github.io/lucca"
   }
 }
 </script>

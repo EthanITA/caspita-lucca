@@ -1,18 +1,15 @@
 <template>
-  <div v-show="this.$store.state.homepage_loader_loaded"
-       class="ani-timing-ease-out ani-bg-pan-left ani-10000">
-    <div
-      class="image ani-slide-in-elliptic-right-bck ani-1300 ani-timing-ease-out">
-      <img
-        class="is-rounded"
-        src="../../assets/brand/original/caspita_icon.svg"
-        alt="caspita logo"/>
-      <router-link to="/virtual_tour">
-        <rounded-button md_icon="tour" description="Fai un tour"/>
-      </router-link>
+  <div
+    class="image ani-slide-in-bck-center ani-900 ani-timing-ease-out has-text-centered">
+    <img
+      class="is-rounded is-unselectable"
+      src="../../assets/brand/original/custom_caspita_icon.svg"
+      alt="caspita logo"/>
+    <router-link to="/virtual_tour">
+      <rounded-button md_icon="tour" description="Fai un tour"/>
+    </router-link>
 
 
-    </div>
   </div>
 </template>
 

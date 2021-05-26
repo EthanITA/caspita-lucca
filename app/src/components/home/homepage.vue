@@ -1,25 +1,19 @@
 <template>
   <div>
     <loader v-if="!this.$store.state.homepage_loader_loaded"/>
-    <div v-else>
+    <div v-show="this.$store.state.homepage_loader_loaded">
 
-      <section class="hero is-warning is-bold is-fullheight ani-slide-in-left ani-800"
-      >
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head ">
-          <toolbar/>
+      <caspita_app :is_home="true">
+        <div class="container">
+          <Homepage_body/>
         </div>
+        <template #below>
+          <below_body/>
+        </template>
+      </caspita_app>
 
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-          <div class="container">
-            <homepage_body/>
-          </div>
-        </div>
-
-        <!-- Hero footer: will stick at the bottom -->
-      </section>
     </div>
+
   </div>
 </template>
 
@@ -30,12 +24,14 @@ import Below_body from "./below_body";
 import Homepage_body from "./body";
 import Loader from "./loader";
 import Toolbar from "../header/toolbar";
+import Caspita_app from "../caspita_app";
 
 export default {
   name: 'homepage',
-  components: {Toolbar, Loader, Homepage_body, Below_body},
+  components: {Caspita_app, Toolbar, Loader, Homepage_body, Below_body},
   mounted() {
-    this.$store.dispatch("ping")
+    if (this.$store.getters.is_production)
+      this.$store.dispatch("ping")
   }
 };
 </script>

@@ -44,7 +44,9 @@ export default new Vuex.Store({
       link: "https://www.instagram.com/caspita_srl/",
       text: "Instagram"
     },
-    homepage_loader_loaded: false
+    homepage_loader_loaded: false,
+    caspita_color: "#e05193",
+    background_color_style: "background-color:#e05193"
   },
   mutations: {
     // eslint-disable-next-line camelcase
@@ -62,7 +64,7 @@ export default new Vuex.Store({
     get_loaded(state) {
       return state.loaded;
     },
-    is_production(){
+    is_production() {
       return process.env.NODE_ENV === 'production'
     }
   },
