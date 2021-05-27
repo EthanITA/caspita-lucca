@@ -1,7 +1,7 @@
 <template>
   <div>
     <loader v-if="!this.$store.state.homepage_loader_loaded"/>
-    <div v-else>
+    <div v-show="this.$store.state.homepage_loader_loaded">
 
       <caspita_app has_animation full_navbar>
         <div class="container">
