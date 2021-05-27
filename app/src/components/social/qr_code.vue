@@ -1,10 +1,10 @@
 <template>
   <div>
-    <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed" class="has-text-centered">
+    <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed" class="has-text-centered" >
       <md-dialog-title class="is-size-3">
         QR Code
       </md-dialog-title>
-      <md-dialog-content class="content">
+      <md-dialog-content class="content" >
         <div ref="qart" />
         <a :href="config.value" class="has-text-info is-size-5">{{ config.value }}</a>
       </md-dialog-content>
