@@ -1,9 +1,9 @@
 <template>
   <div>
     <loader v-if="!this.$store.state.homepage_loader_loaded"/>
-    <div v-show="this.$store.state.homepage_loader_loaded">
+    <div v-else>
 
-      <caspita_app :is_home="true">
+      <caspita_app has_animation full_navbar>
         <div class="container">
           <Homepage_body/>
         </div>

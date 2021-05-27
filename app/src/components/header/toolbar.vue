@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header class="columns is-vcentered is-mobile" style="background-color: #e05193">
-
+    <header class="columns is-vcentered is-mobile navbar is-fixed-top"
+            :style="this.$store.state.background_color_style" style="z-index: 1">
       <div class="column">
         <brand_logo :anim_icon="anim_icon"/>
       </div>
