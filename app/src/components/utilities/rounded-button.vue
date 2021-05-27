@@ -1,29 +1,26 @@
 <template>
-  <b-tooltip :active="Boolean(tooltip)" :label="tooltip" :triggers="['hover','focus']" :position="tooltip_position">
-    <md-button style="height:40px;padding:0;margin:0.25rem"
-               :class="{
+  <b-tooltip :active="Boolean(tooltip)" :label="tooltip" :position="tooltip_position" :triggers="['hover','focus']">
+    <md-button :class="{
                       'md-raised':is_raised,
                       'button is-rounded':is_rounded && !is_icon,
                       'md-icon-button':is_icon
-             }">
-      <slot/>
+             }"
+               style="height:40px;padding:0;margin:0.25rem">
       <md-icon v-if="has_img && !is_icon">
         <img
-          :style="icon_size"
+          :alt="img_alt"
           :src="img_src"
-          :alt="img_alt"/>
+          :style="icon_size"/>
       </md-icon>
-      <md-icon  v-else-if="md_icon"
+
+      <md-icon v-else-if="md_icon"
                :style="icon_size"
       >
-        <span class="material-icons-two-tone">
-
         {{ md_icon }}
-        </span>
       </md-icon>
       <img v-else
-           :style="icon_size"
-           :src="img_src" :alt="img_alt"
+           :alt="img_alt"
+           :src="img_src" :style="icon_size"
       />
       <span v-if="description && !is_icon" style="margin-left:0.5rem;">{{ description }}</span>
     </md-button>

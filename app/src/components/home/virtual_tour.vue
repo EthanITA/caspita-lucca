@@ -1,12 +1,13 @@
 <template>
   <caspita_app>
     <b-loading :active="!iframe_loaded" :is-full-page="false"/>
-    <iframe @load="iframe_loaded=true"
-            style="width: 100vw;height: 100vh"
-            src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
-            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr"
+            allowfullscreen="true"
             allowvr="true"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr">
+            frameborder="0" mozallowfullscreen="true" src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
+            style="width: 100vw;height: 100vh"
+            webkitallowfullscreen="true"
+            @load="iframe_loaded=true">
 
     </iframe>
   </caspita_app>

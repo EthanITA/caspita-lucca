@@ -1,11 +1,11 @@
 <template>
   <div>
-    <md-dialog :md-fullscreen="false" :md-active.sync="qrcode_showed" class="has-text-centered" >
+    <md-dialog :md-active.sync="qrcode_showed" :md-fullscreen="false" class="has-text-centered">
       <md-dialog-title class="is-size-3">
         QR Code
       </md-dialog-title>
-      <md-dialog-content class="content" >
-        <div ref="qart" />
+      <md-dialog-content class="content">
+        <div ref="qart"/>
         <a :href="config.value" class="has-text-info is-size-5">{{ config.value }}</a>
       </md-dialog-content>
       <md-dialog-actions>
@@ -14,9 +14,9 @@
         </md-button>
       </md-dialog-actions>
     </md-dialog>
-    <rounded-button @click.native="show_qrcode_dialog(true)" :is_icon="is_icon" md_icon="qr_code_2"
-                    :tooltip="is_icon?'QR Code di Caspita':''" :is_raised="is_icon"
-                    description="QR Code"/>
+    <rounded-button :is_icon="is_icon" :is_raised="is_icon" :tooltip="is_icon?'QR Code di Caspita':''"
+                    description="QR Code" md_icon="qr_code_2"
+                    @click.native="show_qrcode_dialog(true)"/>
   </div>
 </template>
 

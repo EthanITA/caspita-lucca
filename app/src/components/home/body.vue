@@ -2,11 +2,11 @@
   <div
     class="image ani-slide-in-bck-center ani-900 ani-timing-ease-out has-text-centered">
     <img
+      alt="caspita logo"
       class="is-rounded is-unselectable"
-      src="../../assets/brand/original/custom_caspita_icon.svg"
-      alt="caspita logo"/>
+      src="../../assets/brand/original/custom_caspita_icon.svg"/>
     <router-link to="/virtual_tour">
-      <rounded-button md_icon="tour" description="Fai un tour"/>
+      <rounded-button description="Fai un tour" md_icon="tour"/>
     </router-link>
 
 

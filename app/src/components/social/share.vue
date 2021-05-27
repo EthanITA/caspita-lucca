@@ -1,6 +1,6 @@
 <template>
-  <md-menu md-size="auto" md-direction="bottom-start" md-align-trigger :md-active.sync="share_menu_enabled">
-    <rounded-button :md_icon="share_icon" :description="share_text" :is_raised="false"
+  <md-menu :md-active.sync="share_menu_enabled" md-align-trigger md-direction="bottom-start" md-size="auto">
+    <rounded-button :description="share_text" :is_raised="false" :md_icon="share_icon"
                     @click.native="share_menu_enabled=!share_menu_enabled"
     />
 
@@ -9,11 +9,12 @@
                     :key="network.text"
                     :network="network.network"
                     :url="$store.state.google_maps.link"
-                    title="Caspita SRL - centro del risparmio a Lucca"
                     description="Tutto per la casa... Tantissimi prodotti di buona qualità a prezzo contenuto, vieni a trovarci!"
+                    title="Caspita SRL - centro del risparmio a Lucca"
       >
-        <rounded-button :has_img="true" :img_src="require('@/assets/icons/'+network.network + '_icon.svg')"
-                        :img_alt="'Icona ' + network.text" :description="network.text"
+        <rounded-button :description="network.text" :has_img="true"
+                        :img_alt="'Icona ' + network.text"
+                        :img_src="require('@/assets/icons/'+network.network + '_icon.svg')"
                         :is_raised="false"
         />
         <md-divider/>

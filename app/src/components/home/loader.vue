@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <div class="hero is-fullheight" :class="loader_div_anim"  >
+  <div>
+    <div :class="loader_div_anim" class="hero is-fullheight">
       <div class="hero-body has-text-centered">
         <div class="container ">
           <svg id="svg598" style="max-height:80vh;height:300px;width:auto" viewBox="0 0 633 633"

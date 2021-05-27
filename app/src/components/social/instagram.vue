@@ -1,8 +1,8 @@
 <template>
   <div>
-    <rounded-button @click.native="open_instagram"
-                    :is_icon="is_icon" :has_img="true" :img_src="icon" :img_alt="icon_alt" :tooltip="link_title"
-                    :description="text" :is_raised="is_icon"
+    <rounded-button :description="text"
+                    :has_img="true" :img_alt="icon_alt" :img_src="icon" :is_icon="is_icon" :is_raised="is_icon"
+                    :tooltip="link_title" @click.native="open_instagram"
     />
   </div>
 </template>

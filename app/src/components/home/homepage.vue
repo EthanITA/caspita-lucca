@@ -3,7 +3,7 @@
     <loader v-if="!this.$store.state.homepage_loader_loaded"/>
     <div v-show="this.$store.state.homepage_loader_loaded">
 
-      <caspita_app has_animation full_navbar>
+      <caspita_app full_navbar has_animation>
         <div class="container">
           <Homepage_body/>
         </div>

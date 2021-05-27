@@ -17,7 +17,7 @@
           </div>
 
           <!-- Hero content: will be in the middle -->
-          <div class="hero-body" :class="{'ani-scale-in-tl ani-800':has_animation}">
+          <div :class="{'ani-scale-in-tl ani-800':has_animation}" class="hero-body">
             <slot/>
           </div>
 

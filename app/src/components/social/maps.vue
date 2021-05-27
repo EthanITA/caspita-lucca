@@ -1,9 +1,9 @@
 <template>
   <div>
-    <rounded-button @click.native="open_gmaps"
-                    :is_icon="is_icon" :has_img="true" :img_src="gmaps_icon" :img_alt="gmaps_alt" :tooltip="gmaps_title"
-                    :is_raised="is_icon"
-                    :description="text"
+    <rounded-button :description="text"
+                    :has_img="true" :img_alt="gmaps_alt" :img_src="gmaps_icon" :is_icon="is_icon" :is_raised="is_icon"
+                    :tooltip="gmaps_title"
+                    @click.native="open_gmaps"
     />
   </div>
 </template>

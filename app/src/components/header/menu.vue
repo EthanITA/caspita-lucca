@@ -7,9 +7,9 @@
       <social_share class="md-layout-item"/>
     </div>
     <div class="md-xsmall-show">
-      <md-menu class=" is-justify-content-flex-end is-flex" md-size="auto" md-direction="bottom-end">
+      <md-menu class=" is-justify-content-flex-end is-flex" md-direction="bottom-end" md-size="auto">
 
-        <md-button md-menu-trigger class="md-icon-button">
+        <md-button class="md-icon-button" md-menu-trigger>
           <md-icon>more_vert</md-icon>
         </md-button>
 
