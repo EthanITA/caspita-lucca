@@ -1,19 +1,15 @@
 <template>
-  <div :style="this.$store.state.background_color_style">
-    <brand_logo style="position: absolute"></brand_logo>
+  <caspita_app>
     <b-loading :active="!iframe_loaded" :is-full-page="false"/>
-    <div class="resp-container">
-      <iframe class="resp-iframe"
-              @load="iframe_loaded=true"
-              style="width: 100vw;height: 100vh"
-              src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
-              frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
-              allowvr="true"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr">
+    <iframe @load="iframe_loaded=true"
+            style="width: 100vw;height: 100vh"
+            src="https://www.klapty.com/tour/tunnel/QV50KELvRk"
+            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+            allowvr="true"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr">
 
-      </iframe>
-    </div>
-  </div>
+    </iframe>
+  </caspita_app>
 </template>
 <script>
 import Toolbar from "../header/toolbar";
