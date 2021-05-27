@@ -7,9 +7,6 @@
         <div class="container">
           <Homepage_body/>
         </div>
-        <template #below>
-          <below_body/>
-        </template>
       </caspita_app>
 
     </div>
